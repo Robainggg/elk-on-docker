@@ -39,7 +39,7 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 > This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:  
 >      1. Open the Rancher Desktop terminal by running the command:  
 >      ```
->         rdctl shell
+>         rdctl shell  
 >      ```
 >      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:  
 >      ```
