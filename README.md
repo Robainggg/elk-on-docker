@@ -36,14 +36,15 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
    
    **WARNING**  
  If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.  
-   This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:  
+ This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:  
       1. Open the Rancher Desktop terminal by running the command:  
+      ```bash
+         rdctl shell
+      ```
+      3. In the Rancher terminal, run the following command to adjust the virtual memory limit:  
        ```bash
-          rdctl shell
-      ```  
-      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:  
-       ```bash
-       sudo sysctl -w vm.max_map_count=262144      ```
+           sudo sysctl -w vm.max_map_count=262144
+         ```
 
 
 6. **Verify the ELK Stack is Running**  
