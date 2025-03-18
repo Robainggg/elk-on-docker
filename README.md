@@ -20,10 +20,12 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
    - Set the encryption key (required length 32)
 
 4. **Start the ELK Stack**  
-   Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:  
+   Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:
+   ```bash
      cd path\to\your\directory
+   ```
    
-5. **Run Docker Compose**  
+6. **Run Docker Compose**  
    Once you're in the correct directory, run the following command to start the ELK stack:  
      docker-compose up -d
    
@@ -31,20 +33,28 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 >  If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.
 >   This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:
 >      1. Open the Rancher Desktop terminal by running the command:
+>       ```bash
 >          rdctl shell
+>       ```
 >      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:
+>       ```bash
 >         sudo sysctl -w vm.max_map_count=262144
+>       ```
 
 6. **Verify the ELK Stack is Running**  
-   To verify that the containers are running correctly, use the following command:  
+   To verify that the containers are running correctly, use the following command:
+   ```bash
      docker-compose ps
+   ```
 
-7. **Access the ELK Stack**  
+8. **Access the ELK Stack**  
    Once the stack is up and running, you can access Kibana via your web browser at the following URL:  
      http://localhost:5601
    
-8. **Stop the ELK Stack**  
-   To stop the running containers and shut down the ELK stack, run the following command:  
+9. **Stop the ELK Stack**  
+   To stop the running containers and shut down the ELK stack, run the following command:
+   ```bash
      docker-compose down -v
+   ```
 
 
