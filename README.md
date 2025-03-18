@@ -20,7 +20,7 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
    - Set your passwords (e.g., Elasticsearch password, etc.)
    - Set the encryption key (required length 32)
 
-4. **Start the ELK Stack** 
+4. **Start the ELK Stack**  
    Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:
    
      cd path\to\your\directory
