@@ -34,7 +34,7 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
      docker-compose up -d
 
    
->   **WARNING**
+   **WARNING**  
  If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.  
    This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:  
       1. Open the Rancher Desktop terminal by running the command:  
