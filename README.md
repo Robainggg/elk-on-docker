@@ -16,16 +16,20 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 
 3. **Configure Environment Variables**  
    Open the `.env` file in a text editor and modify the following variables as needed:
+   
    - Set your passwords (e.g., Elasticsearch password, etc.)
    - Set the encryption key (required length 32)
 
-4. **Start the ELK Stack** 
+5. **Start the ELK Stack** 
    Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:
+   
      cd path\to\your\directory
    
-5. **Run Docker Compose**  
+6. **Run Docker Compose**  
    Once you're in the correct directory, run the following command to start the ELK stack:
+   
      docker-compose up -d
+   
 >   **WARNING**
 >  If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.
 >   This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:
