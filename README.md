@@ -15,19 +15,16 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
    Create a directory on your local machine and place the following 4 files from the repository into that directory.
 
 3. **Configure Environment Variables**  
-   Open the `.env` file in a text editor and modify the following variables as needed:
-   
+   Open the `.env` file in a text editor and modify the following variables as needed:  
    - Set your passwords (e.g., Elasticsearch password, etc.)
    - Set the encryption key (required length 32)
 
 4. **Start the ELK Stack**  
-   Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:
-   
+   Open the Command Prompt and navigate to the directory where you placed the files using the `cd` command:  
      cd path\to\your\directory
    
 5. **Run Docker Compose**  
-   Once you're in the correct directory, run the following command to start the ELK stack:
-   
+   Once you're in the correct directory, run the following command to start the ELK stack:  
      docker-compose up -d
    
 >   **WARNING**
@@ -39,15 +36,15 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 >         sudo sysctl -w vm.max_map_count=262144
 
 6. **Verify the ELK Stack is Running**  
-   To verify that the containers are running correctly, use the following command:
+   To verify that the containers are running correctly, use the following command:  
      docker-compose ps
 
 7. **Access the ELK Stack**  
-   Once the stack is up and running, you can access Kibana via your web browser at the following URL:
+   Once the stack is up and running, you can access Kibana via your web browser at the following URL:  
      http://localhost:5601
    
 8. **Stop the ELK Stack**  
-   To stop the running containers and shut down the ELK stack, run the following command:
+   To stop the running containers and shut down the ELK stack, run the following command:  
      docker-compose down -v
 
 
