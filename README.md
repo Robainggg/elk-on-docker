@@ -40,7 +40,7 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 >      1. Open the Rancher Desktop terminal by running the command:  
 >      ```
 >         rdctl shell  
->      ```
+>      ```  
 >      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:  
 >      ```
 >         sudo sysctl -w vm.max_map_count=262144
