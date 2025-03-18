@@ -56,7 +56,7 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 
 8. **Access the ELK Stack**  
    Once the stack is up and running, you can access Kibana via your web browser at the following URL:  
-     `http://localhost:5601`
+     **http://localhost:5601**
 
    
 9. **Stop the ELK Stack**  
