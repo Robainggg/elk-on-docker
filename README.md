@@ -26,13 +26,13 @@ This guide will walk you through setting up the ELK stack (Elasticsearch, Logsta
 5. **Run Docker Compose**  
    Once you're in the correct directory, run the following command to start the ELK stack:
      docker-compose up -d
-   **WARNING**
-   If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.
-   This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:
-      1. Open the Rancher Desktop terminal by running the command:
-          rdctl shell
-      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:
-         sudo sysctl -w vm.max_map_count=262144
+>   **WARNING**
+>  If you're using Rancher Desktop, there might be an issue with the virtual memory allocation for Elasticsearch.
+>   This can cause the Elasticsearch container to fail to start. To resolve this, follow these steps:
+>      1. Open the Rancher Desktop terminal by running the command:
+>          rdctl shell
+>      2. In the Rancher terminal, run the following command to adjust the virtual memory limit:
+>         sudo sysctl -w vm.max_map_count=262144
 
 7. **Verify the ELK Stack is Running**  
    To verify that the containers are running correctly, use the following command:
